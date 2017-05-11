@@ -1,4 +1,5 @@
-
+// Prevent errors when the file is loaded in node.
+if (typeof window !== 'undefined') {
 
 /*
  * Copyright 2009 Google Inc.
@@ -7682,3 +7683,5 @@ jstestdriver.plugins.TestCaseManagerPlugin.prototype.getTestRunsConfigurationFor
         return value;
     });
 })(window);
+  
+}
